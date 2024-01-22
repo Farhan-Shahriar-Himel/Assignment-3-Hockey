@@ -43,6 +43,15 @@
         .border-bottom {
             border-bottom: 1px solid #1313181A;
         }
+
+        input {
+            border: none;
+            border-radius: 12px;
+            background-color: #13131808;
+            padding: 1rem;
+            width: 100%;
+        }
+
     </style>
     
 
@@ -91,22 +100,22 @@
         <section class="mt-8 flex justify-center">
             <div class="grid grid-cols-1 lg:grid-cols-4 gap-20">
                 <div class="text-center">
-                    <div class="radial-progress text-[#FF4240] mb-4 size-32" style="--value:87;" role="progressbar"><span class="text-black text-xl font-extrabold">87%</span></div>
+                    <div class="radial-progress text-[#FF4240] mb-4" style="--value:87; --size:9rem" role="progressbar"><span class="text-black text-xl font-extrabold">87%</span></div>
                     <h1 class="text-xl font-bold mb-4">Prayer Facility</h1>
                     <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
                 </div>
                 <div class="text-center">
-                    <div class="radial-progress text-[#49D293] mb-4 size-32" style="--value:95;" role="progressbar"><span class="text-black text-xl font-extrabold">95%</span></div>
+                    <div class="radial-progress text-[#49D293] mb-4" style="--value:95; --size:9rem" role="progressbar"><span class="text-black text-xl font-extrabold">95%</span></div>
                     <h1 class="text-xl font-bold mb-4">Experienced Coach</h1>
                     <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
                 </div>
                 <div class="text-center">
-                    <div class="radial-progress text-[#FFB546] mb-4 size-32" style="--value:90;" role="progressbar"><span class="text-black text-xl font-extrabold">90%</span></div>
+                    <div class="radial-progress text-[#FFB546] mb-4" style="--value:90;--size:9rem" role="progressbar"><span class="text-black text-xl font-extrabold">90%</span></div>
                     <h1 class="text-xl font-bold mb-4">Senior Player</h1>
                     <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
                 </div>
                 <div class="text-center">
-                    <div class="radial-progress text-[#4C8DF1] mb-4 size-32" style="--value:80;" role="progressbar"><span class="text-black text-xl font-extrabold">80%</span></div>
+                    <div class="radial-progress text-[#4C8DF1] mb-4" style="--value:80;--size:9rem" role="progressbar"><span class="text-black text-xl font-extrabold">80%</span></div>
                     <h1 class="text-xl font-bold mb-4">Training Ground</h1>
                     <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
                 </div>
@@ -401,6 +410,66 @@
             <div class="text-center md:max-w-[70%] mx-auto space-y-4">
                 <h1 class="text-4xl font-extrabold">Get In Touch</h1>
                 <p>Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+            </div>
+        </section>
+
+        <section class="mt-16 flex flex-col md:flex-row gap-8">
+            <div class="p-4 border border-[#13131880] rounded-2xl space-y-4 md:w-[40%]">
+                <div class="bg-[#BCED6D1A] space-y-8 p-8 rounded-2xl">
+                    <img src="Images/phone.png" alt="">
+                    <div>
+                        <h1 class="text-[#13131880] space-y-2">Phone Number</h1>
+                        <h1 class="font-extrabold">(+62) 123-321-543</h1>
+                    </div>
+                </div>
+                <div class="bg-[#FDDD5F1A] space-y-8 p-8 rounded-2xl">
+                    <img src="Images/email.png" alt="">
+                    <div>
+                        <h1 class="text-[#13131880] space-y-2">Phone Number</h1>
+                        <h1 class="font-extrabold">(+62) 123-321-543</h1>
+                    </div>
+                </div>
+                <div class="bg-[#629CF31A] space-y-8 p-8 rounded-2xl">
+                    <img src="Images/location.png" alt="">
+                    <div>
+                        <h1 class="text-[#13131880] space-y-2">Phone Number</h1>
+                        <h1 class="font-extrabold">(+62) 123-321-543</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="md:w-[60%] space-y-4 my-auto">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="space-y-2">
+                        <h1 class="text-2xl font-bold">Your Name</h1>
+                        <input class="p-4" type="text" placeholder="Enter your full name" name="" id="">
+                    </div>
+                    <div  class="space-y-2">
+                        <h1 class="text-2xl font-bold">Your Email</h1>
+                        <input class="p-4" type="email" placeholder="Enter your email" name="" id="">
+                    </div>
+                    <div  class="space-y-2">
+                        <h1 class="text-2xl font-bold">Subject</h1>
+                        <input class="p-4" type="text" placeholder="Enter your subject" name="" id="">
+                    </div>
+                    <div  class="space-y-2">
+                        <h1 class="text-2xl font-bold">Phone Number</h1>
+                        <input class="p-4" type="text" placeholder="Enter your phone number" name="" id="">
+                    </div>
+                </div>
+                <div class="space-y-2">
+                    <h1 class="text-2xl font-bold">Message</h1>
+                    <textarea class="bg-[#13131808] w-[100%] p-4 rounded-2xl" name="" placeholder="Enter Your message" id="" cols="30" rows="10"></textarea>
+                </div>
+                <button class="btn btn-primary text-white border-none rounded-2xl w-[100%] bg-[#FF4240]">Send Message</button>
+            </div>
+        </section>
+
+        <section class="mt-16 bg-[#13131808] py-8">
+            <div class="text-center space-y-4">
+                <h1 class="text-4xl font-extrabold">Social Media</h1>
+                <div class="flex justify-center items-center">
+                    <img src="Images/Social.png" alt="">
+                </div>
             </div>
         </section>
 
